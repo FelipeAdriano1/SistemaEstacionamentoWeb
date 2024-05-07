@@ -1,0 +1,26 @@
+[
+  {
+    "nome": "a",
+    "telefone": "a",
+    "modelo": "a",
+    "tipoCad": "Carro",
+    "placa": "a",
+    "horaEntrada": "2024-05-06T18:15",
+    "horaSaida": "2024-05-06T18:20",
+    "precoFixo": "6.53",
+    "precoHora": "3.55",
+    "precoTotal": "6.83"
+  },
+  {
+    "nome": "Maria",
+    "telefone": "199444444",
+    "modelo": "Chevrolet",
+    "tipoCad": "Carro",
+    "placa": "ASD",
+    "horaEntrada": "2024-05-06T19:18",
+    "horaSaida": "2024-05-06T19:33",
+    "precoFixo": "6.53",
+    "precoHora": "3.55",
+    "precoTotal": "7.43"
+  }
+]

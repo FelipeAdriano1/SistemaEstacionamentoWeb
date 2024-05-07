@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprovantes</title>
+    <link rel="stylesheet" href="/bootstrap/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/JavaScript/funcoesGerais.js"></script>
+    <script src="/JavaScript/carregarComprovantes.js"></script>
+</head>
+
+<body onload="exibirComprovantes()">
+
+    <div class="container-fluid">
+        <div class="row mb-2 shadow p-3 mb-5 bg-body-tertiary rounded">
+            <div class="col-md-*">
+
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand disabled" aria-disabled="true" href="#">Estacionamento ABC</a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/HTML/home.html">Página
+                                        inicial</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/HTML/cadastro.html">Cadastrar cliente</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/HTML/clientesCadastados.html">Clientes cadastrados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/HTML/precos.html">Editar preços</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/HTML/checkOut.html">Check Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3 align-self-center">
+
+                <form class="text-center">
+
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <div class="card-body">
+
+                            <div class="card-header mb-2">
+                                Comprovantes
+                            </div>
+
+                            <fieldset>
+
+                                <div class="mb-2">
+                                    <select id="selectComprovante" class="form-select"></select>
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label>Nome</label> <input type="text" id="nomeProp" readonly class="form-control">
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label>Telefone</label> <input type="tel" id="telefone" class="form-control"
+                                        readonly>
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label>Modelo do veículo</label> <input type="text" id="nomeVeiculo"
+                                        class="form-control" readonly>
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label>Tipo do veículo</label> <input type="text" id="tipoCad" class="form-control"
+                                        readonly>
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label>Placa do veículo</label> <input type="text" id="placaCarro"
+                                        class="form-control" readonly>
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label>Hora da entrada: </label> <input type="text" class="form-control" readonly
+                                        id="horaEntrada">
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label>Hora da saida: </label> <input type="text" class="form-control" readonly
+                                        id="horaSaida">
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label>Preço fixo: </label> <input type="number" class="form-control" readonly
+                                        id="precoFixo">
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label>Preço por hora: </label> <input type="number" class="form-control" readonly
+                                        id="precoHora">
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label>Total: </label> <input type="number" id="precoTotal" class="form-control"
+                                        step="0.01" readonly>
+                                </div>
+
+
+                                <button onclick="buttonExcluir()" class="btn btn-danger">Excluir comprovante</button>
+
+                                <button class="btn btn-success" id="buttonImprimir">Imprimir Comprovante</button>
+
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

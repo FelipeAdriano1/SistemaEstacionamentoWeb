@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/JavaScript/funcoesGerais.js"></script>
+    <script src="/JavaScript/precos.js"></script>
+    <title>Tabela de Preços</title>
+</head>
+
+<body class="layout" onload="exibirPrecos()">
+
+    <div class="container-fluid">
+        <div class="row mb-2 shadow p-3 mb-5 bg-body-tertiary rounded">
+            <div class="col-*">
+
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand disabled" aria-disabled="true" href="#">Estacionamento ABC</a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/HTML/home.html">Página
+                                        inicial</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/HTML/cadastro.html">Cadastrar cliente</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/HTML/clientesCadastados.html">Clientes cadastrados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/HTML/comprovantes.html">Comprovantes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/HTML/checkOut.html">Check Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3 text-center">
+
+                <form class="text-center">
+
+                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+                        <div class="card-body">
+
+                            <fieldset>
+
+                                <div class="card-header">Preços do estacionamento</div>
+
+                                <div class="mb-2">
+                                    <label>Preço fixo</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" id="precoFixo" placeholder="Ex: 10.99" class="form-control">
+                                    </div>
+                                </div>
+
+
+                                <div class="mb-2">
+                                    <label>Preço por hora</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" id="precoHora" placeholder="Ex: 10.99" class="form-control">
+                                    </div>
+                                </div>
+
+                                <button id="buttonEditPreco" class="btn btn-primary">Salvar</button>
+
+                            </fieldset>
+
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
